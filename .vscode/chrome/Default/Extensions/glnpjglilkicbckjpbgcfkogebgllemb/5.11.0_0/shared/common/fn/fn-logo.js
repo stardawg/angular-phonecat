@@ -1,0 +1,1 @@
+(function t(){var t=Okta.fn.logo={},r=["#F8C774","#79C2CD","#879CC1","#8EBF5E","#B09ECC","#F89C74"];t.getDisplayName=function(t){var r=t.split(".");if(r[0]==="www"){r.shift()}var a=r.length;var n=r[a-2];if(a>=3&&r[a-2].length<=3){n=r[a-3]}return n.charAt(0).toUpperCase()+n.slice(1)};t.getBackgroundColor=function(){var t=Math.floor(Math.random()*100+1);return r[t%r.length]}})();

@@ -39,20 +39,16 @@ describe('PhoneCat Application', function() {
         'Motorola XOOM\u2122 with Wi-Fi'
       ]);
 
-      queryField.clear();
       oldestOption.click();
 
       expect(getNames()).toEqual([
         'MOTOROLA XOOM\u2122',
-        'Motorola XOOM\u2122 with Wi-Fi',
-        'Nexus S'
+        'Motorola XOOM\u2122 with Wi-Fi'
       ]);
 
-      queryField.clear();
       newestOption.click();
 
       expect(getNames()).toEqual([
-        'Nexus S',
         'Motorola XOOM\u2122 with Wi-Fi',
         'MOTOROLA XOOM\u2122'
       ]);

@@ -1,0 +1,1 @@
+Okta.sessionStorage=function(){var n={};return{get:function(t){return n[t]},set:function(t,r){n[t]=r;return r}}}();
