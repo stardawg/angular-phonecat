@@ -90,6 +90,14 @@ describe('PhoneCat Application', function() {
       expect(element(by.css('.phone-thumbs')).all(by.repeater('')).count()).toBe(4);
     });
 
+    it('should display check for gps', function(){
+      expect(element(by.css('.gps-capable')).getText()).toBe('\u2713');
+    });
+
+    it('should display x for infared', function(){
+      expect(element(by.css('.infared-capable')).getText()).toBe('\u2718');
+    });
+
   });
 
 });
