@@ -18,11 +18,10 @@ describe('phoneDetail', function() {
       $routeParams.phoneId = 'xyz';
 
       ctrl = $componentController('phoneDetail');
+      jasmine.addCustomEqualityTester(angular.equals);
     }));
 
     it('should fetch the phone details', function() {
-      expect(ctrl.phone).toBeUndefined();
-
       $httpBackend.flush();
       expect(ctrl.phone).toEqual(xyzPhoneData);
       expect(ctrl.mainImageUrl).toEqual(xyzPhoneData.images[0]);
